@@ -29,7 +29,7 @@ const app = new Hono<{ Bindings: Bindings }>();
 app.get('/', (c) => {
   return c.json({
     status: 'Portal‑OS live',
-    worker: 'plantetary-max',
+    worker: 'planetary-max',
     mode: c.env.PLANETARY_MODE,
     umbrella: c.env.UMBRELLA_ENFORCEMENT
   });
