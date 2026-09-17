@@ -1,11 +1,28 @@
-name = "planetary-max"
+name = "plantetary-max"
 main = "src/index.ts"
-compatibility_date = "2024-09-01"
+compatibility_date = "2024-09-17"
+
+# Durable Objects (add your DOs here once you re‑enable them)
+# [durable_objects]
+# bindings = [
+#   { name = "KERNEL_DO", class_name = "KernelDO" },
+#   { name = "PROCESS_DO", class_name = "ProcessDO" },
+#   { name = "MODULE_DO", class_name = "ModuleDO" },
+#   { name = "IDENTITY_DO", class_name = "IdentityDO" },
+#   { name = "GOVERNANCE_DO", class_name = "GovernanceDO" },
+#   { name = "UNIVERSE_DO", class_name = "UniverseDO" },
+#   { name = "FEDERATION_DO", class_name = "FederationDO" }
+# ]
 
 [vars]
 PLANETARY_MODE = "single"
 UMBRELLA_ENFORCEMENT = "strict"
 MAXOS_MODULE = "local"
 
-[build]
-command = "npm run build"
+# Optional kernel bridge (if using external kernel)
+# KERNEL_URL = "https://your-kernel-url"
+
+# Optional service binding (if using internal kernel service)
+# [[services]]
+# binding = "KERNEL_SERVICE"
+# service = "kernel-service"
